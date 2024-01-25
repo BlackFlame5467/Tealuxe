@@ -1,0 +1,22 @@
+.blockquote {
+    font-family: $second-ff;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 300;
+    width: 705px;
+    text-align: center;
+    padding: 150px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.blockquote::after {
+    content: "";
+    position: absolute;
+    right: -46px;
+    bottom: 138px;
+    z-index: -1;
+    width: 360px;
+    height: 60px;
+    background: $second-bg;
+    opacity: .5;
+}

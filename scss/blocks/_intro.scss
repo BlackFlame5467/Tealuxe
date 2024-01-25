@@ -1,0 +1,24 @@
+.intro {
+    background: url(../img/intro/bg.jpg) center / cover no-repeat;
+    &__inner {  
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: $second-ff;
+    }
+    &__title {
+        font-size: 60px;
+        color: $second-color;
+        font-weight: 400;
+        width: 790px;
+        margin: 0 0 20px 0;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        color: $second-color;
+        width: 560px;
+        margin: 0 0 50px 0;
+    }
+}

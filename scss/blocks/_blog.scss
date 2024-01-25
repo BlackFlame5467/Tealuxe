@@ -1,0 +1,53 @@
+.blog {
+    padding: 150px 0;
+
+    &__title {}
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px 60px;
+        margin: 0 0 60px 0;
+    }
+
+    &__item {
+        display: flex;
+        gap: 0 20px;
+    }
+
+    &__item-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item-title {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: $second-ff;
+        width: 250px;
+    }
+
+    &__item-subtitle {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: center;
+        gap: 0 8px;
+        font-size: 13px;
+        font-weight: 300;
+        color: $main-color;
+        transition: gap .3s ease-in;
+    }
+    &__item-link:hover {
+        gap: 0 12px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+    }
+}

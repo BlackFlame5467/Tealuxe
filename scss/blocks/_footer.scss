@@ -1,0 +1,150 @@
+.footer {
+    background: $second-bg;
+    padding: 100px 0 25px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__nav {
+        display: flex;
+        gap: 0 215px;
+    }
+
+    &__title {
+        font-size: 24px;
+        margin: 0 0 50px 0;
+        font-family: $second-ff; 
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-weight: 300;
+        color: $main-color;
+        transition: color .3s ease-in;
+    }
+    &__link:hover {
+        color: $lightgreen-color;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+    }
+
+    &__info-text {
+        font-weight: 300;
+        font-style: italic;
+        width: 270px;
+        margin: 0 0 20px 0;
+    }
+
+    &__info-title {
+        font-size: 12px;
+        font-weight: 300;
+        width: 130px;
+    }
+
+    &__contact {}
+
+    &__subtitle {
+        font-size: 13px;
+        font-weight: 300;
+        width: 270px;
+        margin: 0 0 20px 0;
+    }
+
+    &__connects {
+        display: flex;
+        gap: 0 72px;
+        align-items: center;
+        margin: 0 0 40px 0;
+    }
+
+    &__logo {}
+
+    &__connect {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    &__connect-link {
+        color: $main-color;
+        position: relative;
+    }
+    &__connect-phone::before {
+        content: "";
+        width: 21px;
+        height: 21px;
+        background: url(../img/footer/phone.svg);
+        position: absolute;
+        top: 2px;
+        left: -31px;
+    }
+    &__connect-email:before {
+        content: "";
+        width: 22px;
+        height: 16px;
+        background: url(../img/footer/email.svg);
+        position: absolute;
+        top: 3px;
+        left: -32px;
+    }
+
+
+    &__socials {
+        display: flex;
+        gap: 0 20px;
+        justify-content: flex-end;
+    }
+    &__socials a {
+        display: flex;
+        align-items: center;
+    }
+
+    &__company {}
+
+    &__company-title {}
+
+    &__paymant {
+        display: flex;
+        gap: 0 20px;
+        align-items: center;
+    }
+    &__paymant a {
+        display: flex;
+        align-items: center;
+    }
+}
+.nav {
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 185px 0;
+    }
+
+    &__product-box {
+
+    }
+
+    &__company {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 100px 0;
+    }
+    
+    &__company-box {
+        
+    }
+}
