@@ -25,4 +25,15 @@
         font-weight: 600;
     }
 }
-
+@media (max-width: 1000px) {
+    .rewiews__list {
+        flex-wrap: wrap;
+        gap: 30px 76px;
+        justify-content: center;
+    }
+}
+@media (max-width: 678px) {
+    .rewiews__item:nth-child(3), .rewiews__item:nth-child(4) {
+        display: none;
+    }
+}

@@ -10,11 +10,29 @@
         text-align: center;
     }
 
-    &__item {}
+    &__item {
+        transition: transform .3s ease-in;
+        cursor: pointer;
+    }
+
+    &__item:hover {
+        transform: scale(1.2);
+    }
 
     &__item-title {
         font-size: 24px;
         font-weight: 400;
         margin: 10px 0 0 0;
+    }
+}
+@media (max-width: 1000px) {
+    .collection__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    .collection {
+        padding: 0 0 60px 0;
     }
 }

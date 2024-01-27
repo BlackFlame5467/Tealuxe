@@ -5,10 +5,12 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        
     }
     &__nav {
         display: flex;
-        gap: 0 215px;
+        justify-content: space-between;
+        gap: 0 125px;
     }
 
     &__title {
@@ -36,7 +38,9 @@
     &__info {
         display: flex;
         align-items: center;
-        gap: 0 40px;
+        gap: 50px 40px;
+        justify-content: flex-end;
+
     }
 
     &__info-text {
@@ -123,28 +127,93 @@
         display: flex;
         align-items: center;
     }
+    &__paymants {
+        display: flex;
+        padding: 100px 0 0 0;
+        gap: 0 160px;
+    }
 }
 .nav {
 
     &__product {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 185px 0;
     }
 
-    &__product-box {
-
-    }
 
     &__company {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 100px 0;
+        width: 156px;
     }
     
-    &__company-box {
-        
+}
+
+@media (max-width: 1048px) {
+    .footer__info {
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .footer__nav {
+        gap: 0 72px;
+    }
+    .footer__paymants {
+        gap: 0 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 50px 0;
+    }
+    .footer__nav {
+        gap: 0 53px;
+    }
+}
+
+@media (max-width: 690px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        gap: 50px 0;
+    }
+    .footer__nav {
+        gap: 0 133px;
+    }
+    .footer__info {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .footer__info-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .footer__connects {
+        margin: 0;
+    }
+    .footer__info-text {
+        width: 100%;
+    }
+    .footer__info-title {
+        width: 100%;
+    }
+    .footer__contact {
+        width: 100%;
+        text-align: center;
+    }
+    .footer__contact-title {
+        text-align: center;
+    }
+    .footer__subtitle {
+        width: 100%;
+    }
+    .footer__paymants {
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+@media (max-width: 480px) {
+    .footer__nav {
+        gap: 0 72px;
+    }
+    .footer__info-box {
+        flex-direction: column;
+        gap: 40px 0;
     }
 }

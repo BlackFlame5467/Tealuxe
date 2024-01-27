@@ -13,6 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <span class="header__burger"></span>
                 <a href="#" class="header__logo">
                     <img src="./img/header-nav/logo.svg" alt="logo">
                 </a>
@@ -36,14 +37,69 @@
                     </ul>
                 </nav>
                 <div class="header__login">
-                    <a href="#">
-                        <img src="./img/header-nav/basket.svg" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="./img/header-nav/login.svg" alt="">
-                    </a>
+                    <div class="header__login-nav">
+                        <a href="#">
+                            <img src="./img/header-nav/basket.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/header-nav/login.svg" alt="">
+                        </a>
+                    </div>
+                    <form class="header__search">
+                        <button class="header__btn">
+                            <img src="./img/header-nav/search.svg" alt="">
+                        </button>
+                    </form>
                 </div>
-                <form class="header__search">
+            </div>
+        </div>
+        <div class="burger">
+            <div class="burger__container">
+                <button class="burger__btn">
+                    <img src="./img/header-nav/burger/close.svg" alt="">
+                </button>
+                <nav>
+                    <ul class="burger__list">
+                        <li>
+                            <a href="#" class="burger__link">Black</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__link">Green</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__link">White</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__link">Oolong</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__link">Pu-erh</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="burger__line"></span>
+                <nav>
+                    <ul class="burger__contact">
+                        <li>
+                            <a href="#" class="burger__contact-link">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__contact-link">Our Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="burger__contact-link">Shipping and Delivery</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="burger__login">
+                <a href="#">
+                    <img src="./img/header-nav/basket.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/header-nav/login.svg" alt="">
+                </a>
+                <form class="burger__search header__search">
                     <button class="header__btn">
                         <img src="./img/header-nav/search.svg" alt="">
                     </button>
@@ -120,7 +176,7 @@
                 <h2 class="blog__title title">Our Tea Blog</h2>
                 <div class="blog__list">
                     <div class="blog__item">
-                        <img src="./img/blog/blog-1.jpg" alt="">
+                        <img class="blog__item-img" src="./img/blog/blog-1.jpg" alt="">
                         <div class="blog__item-info">
                             <h3 class="blog__item-title">Tea Time Travels: Funny Moments from Around the World</h3>
                             <p class="blog__item-subtitle">by Robinson Crusoe</p>
@@ -130,7 +186,7 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <img src="./img/blog/blog-2.jpg" alt="">
+                        <img class="blog__item-img" src="./img/blog/blog-2.jpg" alt="">
                         <div class="blog__item-info">
                             <h3 class="blog__item-title">The Role of Tea in Mental Health
                             </h3>
@@ -141,7 +197,7 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <img src="./img/blog/blog-3.jpg" alt="">
+                        <img class="blog__item-img" src="./img/blog/blog-3.jpg" alt="">
                         <div class="blog__item-info">
                             <h3 class="blog__item-title">Tea-rific Tales: Hilarious Stories from Tea Lovers</h3>
                             <p class="blog__item-subtitle">by Casper the Friendly Ghost</p>
@@ -151,7 +207,7 @@
                         </div>
                     </div>
                     <div class="blog__item">
-                        <img src="./img/blog/blog-4.jpg" alt="">
+                        <img class="blog__item-img" src="./img/blog/blog-4.jpg" alt="">
                         <div class="blog__item-info">
                             <h3 class="blog__item-title">Tea and Caffeine: Effects on the Brain and Behavior</h3>
                             <p class="blog__item-subtitle">by Author Authorius</p>
@@ -216,65 +272,54 @@
             <div class="footer__inner">
                 <div class="footer__nav">
                     <div class="nav__product">
-                        <div class="nav__product-box">
-                            <h2 class="footer__title">Products</h2>
-                            <nav>
-                                <ul class="footer__list">
-                                    <li>
-                                        <a href="#" class="footer__link">Black tea</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Green tea</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">White tea</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Oolong tea</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Pu-erh tea</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <h4 class="footer__company-title">© Tealuxe, 2023</h4>
+                        <h2 class="footer__title">Products</h2>
+                        <nav>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">Black tea</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Green tea</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">White tea</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Oolong tea</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Pu-erh tea</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="nav__company">
-                        <div class="nav__company-box">
-                            <h2 class="footer__title">Company</h2>
-                            <nav>
-                                <ul class="footer__list">
-                                    <li>
-                                        <a href="#" class="footer__link">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Contact Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Our Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Shipping & Delivery</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Refund policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="footer__link">Terms of Service</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="footer__paymant">
-                            <a href="#"><img src="./img/footer/mastercard.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/visa.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/gpay.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/paypal.svg" alt=""></a> 
-                        </div>
+                        <h2 class="footer__title">Company</h2>
+                        <nav>
+                            <ul class="footer__list">
+                                <li>
+                                    <a href="#" class="footer__link">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Our Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Shipping & Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Refund policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer__link">Terms of Service</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
                 <div class="footer__info">
@@ -283,29 +328,40 @@
                         <h3 class="footer__info-title">Dragomir Teodorescu, Tealuxe owner </h3>
                     </blockquote>
                     <div class="footer__contact">
-                        <h2 class="footer__title">Stay In Touch</h2>
+                        <h2 class="footer__title footer__contact-title">Stay In Touch</h2>
                         <p class="footer__subtitle">Please feel free to contact us via the email of phone. We would be happy to hear from you!</p>
-                        <div class="footer__connects">
-                            <a href="#" class="footer__logo">
-                                <img src="./img/footer/logo.svg" alt="">
-                            </a>
-                            <div class="footer__connect"> 
-                                <a href="#" class="footer__connect-link footer__connect-phone">+370 680 123456</a>
-                                <a href="#" class="footer__connect-link footer__connect-email">info@tealuxe.com </a>
+                        <div class="footer__info-box">
+                            <div class="footer__connects">
+                                <a href="#" class="footer__logo">
+                                    <img src="./img/footer/logo.svg" alt="">
+                                </a>
+                                <div class="footer__connect"> 
+                                    <a href="#" class="footer__connect-link footer__connect-phone">+370 680 123456</a>
+                                    <a href="#" class="footer__connect-link footer__connect-email">info@tealuxe.com </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="footer__socials">
-                            <a href="#"><img src="./img/footer/fb.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/youtube.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/instagram.svg" alt=""></a>
-                            <a href="#"><img src="./img/footer/twitter.svg" alt=""></a>
+                            <div class="footer__socials">
+                                <a href="#"><img src="./img/footer/fb.svg" alt=""></a>
+                                <a href="#"><img src="./img/footer/youtube.svg" alt=""></a>
+                                <a href="#"><img src="./img/footer/instagram.svg" alt=""></a>
+                                <a href="#"><img src="./img/footer/twitter.svg" alt=""></a>
+                            </div>
                         </div>
                     </div> 
                 </div>
-             </div>
+            </div>
+            <div class="footer__paymants">
+                <h4 class="footer__company-title">© Tealuxe, 2023</h4>
+                <div class="footer__paymant">
+                    <a href="#"><img src="./img/footer/mastercard.svg" alt=""></a>
+                    <a href="#"><img src="./img/footer/visa.svg" alt=""></a>
+                    <a href="#"><img src="./img/footer/gpay.svg" alt=""></a>
+                    <a href="#"><img src="./img/footer/paypal.svg" alt=""></a> 
+                </div>
+            </div>
         </div>
     </footer>
-
+    <div id="shadow" class=""></div>
     <script src="./js/main.js"></script>
 </body>
 </html>

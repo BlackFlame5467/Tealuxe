@@ -86,4 +86,57 @@
         margin: 0 0 0 10px ;
     }
 }
-
+@media (max-width: 1000px) {
+    .news {
+        background: url(../img/news/tea-bg-1000.jpg);
+    }
+    .news__title {
+        text-align: center;
+    }
+    .news__inner {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px 0;
+    }
+    .news__text {
+        width: 100%;
+        max-width: 780px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .news {
+        padding: 50px 0;
+        background: url(../img/news/tea-bg-768.jpg);
+    }
+    .news__text {
+        font-size: 13px;
+    }
+    .news__form {
+        justify-content: center ;
+    }
+    .news__input {
+        width: 314px;
+    }
+    .news__confirm {
+        width: 460px;
+    }
+} 
+@media (max-width: 480px) {
+    .news {
+        background: $second-bg;
+    }
+    .news__title {
+        font-size: 24px;
+        margin: 0 0 30px 0;
+    }
+    .news__inner {
+        gap: 30px 0;
+    }
+    .news__input {
+        width: 205px;
+    }
+    .news__confirm {
+        width: 340px;
+    }
+}

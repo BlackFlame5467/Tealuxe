@@ -8,7 +8,8 @@
         text-align: center;
     }
 
-    &__item {}
+    &__item {
+    }
 
     &__item-title {
         font-size: 30px;
@@ -20,5 +21,17 @@
         font-size: 20px;
         font-weight: 600;
         margin: 0 0 40px 0;
+    }
+}
+@media (max-width: 1000px) {
+    .priorities__list {
+        justify-content: center;      
+        flex-wrap: wrap;
+        gap: 30px 210px; 
+    }
+}
+@media (max-width: 798px) {
+    .priorities__list {
+        gap: 50px 130px; 
     }
 }

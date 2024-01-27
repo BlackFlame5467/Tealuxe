@@ -20,3 +20,27 @@
     background: $second-bg;
     opacity: .5;
 }
+@media (max-width: 800px) {
+    .blockquote {
+        font-size: 24px;
+        max-width: 430px;
+    }
+    .blockquote::after {
+        right: -7px;
+        bottom: 145px;
+        width: 200px;
+        height: 35px;
+    }
+}
+@media (max-width: 480px) {
+    .blockquote {
+        font-size: 16px;
+        max-width: 260px;
+    }
+    .blockquote::after {
+        right: 18px;
+        bottom: 147px;
+        width: 92px;
+        height: 23px; 
+    }
+}
