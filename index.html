@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tealuxe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=IM+Fell+Great+Primer:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=IM+Fell+Great+Primer:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -38,7 +42,7 @@
                 </nav>
                 <div class="header__login">
                     <div class="header__login-nav">
-                        <a href="#">
+                        <a href="#" class="basket__btn-actvie">
                             <img src="./img/header-nav/basket.svg" alt="">
                         </a>
                         <a href="#">
@@ -104,6 +108,170 @@
                         <img src="./img/header-nav/search.svg" alt="">
                     </button>
                 </form>
+            </div>
+        </div>
+        <div class="basket">
+            <div class="basket__container">
+                <div class="basket__logo">
+                    <h2 class="basket__title">Basket</h2>
+                    <button class="basket__btn">
+                        <img src="./img/header-nav/basket/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="basket__list">
+                    <div class="basket__item">
+                        <div class="basket__item-info">
+                            <img src="./img/header-nav/basket/black.png" alt="">
+                            <h3 class="basket__item-title">Black</h3>
+                        </div>
+                        <div class="basket__amount">
+                            <form class="basket__check">
+                                <button id="0" class="basket__check-btn basket__check-minus" disabled>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <path d="M6 12L18 12" stroke="#a7a6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                        
+                                        </svg>
+                                </button>
+                                <input id="0" type="number" class="basket__input" value="1">
+                                <button id="0" class="basket__check-btn basket__check-plus">
+                                    <img src="./img/header-nav/basket/plus.svg" alt="">
+                                </button>
+                            </form>
+                            <div class="basket__price">
+                                <h2 class="basket__price-currency">$</h2>
+                                <h2 id="0" class="basket__price-price">400</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__item">
+                        <div class="basket__item-info">
+                            <img src="./img/header-nav/basket/green.png" alt="">
+                            <h3 class="basket__item-title">Green</h3>
+                        </div>
+                        <div class="basket__amount">
+                            <form class="basket__check">
+                                <button id="1" class="basket__check-btn basket__check-minus" disabled>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <path d="M6 12L18 12" stroke="#a7a6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                        
+                                        </svg>
+                                </button>
+                                <input id="1" type="number" class="basket__input" value="1">
+                                <button id="1" class="basket__check-btn basket__check-plus">
+                                    <img src="./img/header-nav/basket/plus.svg" alt="">
+                                </button>
+                            </form>
+                            <div class="basket__price">
+                                <h2 class="basket__price-currency">$</h2>
+                                <h2 id="1" class="basket__price-price">400</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__item">
+                        <div class="basket__item-info">
+                            <img src="./img/header-nav/basket/white.png" alt="">
+                            <h3 class="basket__item-title">White</h3>
+                        </div>
+                        <div class="basket__amount">
+                            <form class="basket__check">
+                                <button id="2" class="basket__check-btn basket__check-minus" disabled>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <path d="M6 12L18 12" stroke="#a7a6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                        
+                                        </svg>
+                                </button>
+                                <input id="2" type="number" class="basket__input" value="1">
+                                <button id="2" class="basket__check-btn basket__check-plus">
+                                    <img src="./img/header-nav/basket/plus.svg" alt="">
+                                </button>
+                            </form>
+                            <div class="basket__price">
+                                <h2 class="basket__price-currency">$</h2>
+                                <h2 id="2" class="basket__price-price">400</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__item">
+                        <div class="basket__item-info">
+                            <img src="./img/header-nav/basket/oolong.png" alt="">
+                            <h3 class="basket__item-title">Oolong</h3>
+                        </div>
+                        <div class="basket__amount">
+                            <form class="basket__check">
+                                <button id="3" class="basket__check-btn basket__check-minus" disabled>
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <path d="M6 12L18 12" stroke="#a7a6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                        
+                                        </svg>
+                                </button>
+                                <input id="3" type="number" class="basket__input" value="1">
+                                <button id="3" class="basket__check-btn basket__check-plus">
+                                    <img src="./img/header-nav/basket/plus.svg" alt="">
+                                </button>
+                            </form>
+                            <div class="basket__price">
+                                <h2 class="basket__price-currency">$</h2>
+                                <h2 id="3" class="basket__price-price">400</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__item">
+                        <div class="basket__item-info">
+                            <img src="./img/header-nav/basket/puerh.png" alt="">
+                            <h3 class="basket__item-title">Puerh</h3>
+                        </div>
+                        <div class="basket__amount">
+                            <form class="basket__check">
+                                <button id="4" class="basket__check-btn basket__check-minus" disabled> 
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                                        
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                                        
+                                        <g id="SVGRepo_iconCarrier"> <path d="M6 12L18 12" stroke="#a7a6a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                                        
+                                        </svg>
+                                </button>
+                                <input id="4" type="number" class="basket__input" value="1">
+                                <button id="4" class="basket__check-btn basket__check-plus">
+                                    <img src="./img/header-nav/basket/plus.svg" alt="">
+                                </button>
+                            </form>
+                            <div class="basket__price">
+                                <h2 class="basket__price-currency">$</h2>
+                                <h2 id="4" class="basket__price-price">400</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basket__submit">
+                <div class="basket__sumprice">
+                    <h2 class="basket__price-currency">$</h2>
+                    <h2 class="basket__price-sumprice">5000</h2>
+                </div>
+                <button class="basket__checkout basket__footer-btn btn">Checkout</button>
             </div>
         </div>
     </header>
@@ -364,4 +532,5 @@
     <div id="shadow" class=""></div>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

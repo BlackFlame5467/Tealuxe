@@ -1,0 +1,180 @@
+.basket {
+    max-width: 1240px;
+    min-height: 80vh;
+    background: $main-bg;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: $second-ff;
+    font-size: 24px;
+    position: absolute;
+    top: -800px;
+    left: 0;
+    right: 0;
+    z-index: 6;
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $lightgreen-color;
+    }
+
+    &__title {
+        font-size: 48px;
+    }
+
+    &__btn {}
+
+    &__list {
+        padding: 0 20px;
+        height: 70vh;
+        overflow-y: scroll;
+    }
+
+    &__list::-webkit-scrollbar {
+        width: 8px;               /* ширина всей полосы прокрутки */
+    }
+      
+    &__list::-webkit-scrollbar-track {
+        background: inherit;        /* цвет зоны отслеживания */
+    }
+      
+    &__list::-webkit-scrollbar-thumb {
+        background-color: lightgray;    /* цвет бегунка */
+        border-radius: 20px;       /* округлось бегунка */
+    }
+    &__item {
+        margin: 0 0 20px 0;
+        border-radius: 20px;
+        transition: background .3s ease-in;
+        padding: 15px;
+    }
+    &__item:hover {
+        background: lightgray;
+    }   
+
+    &__item-info {
+        display: flex;
+        align-items: center;
+        gap: 0 60px;
+    }
+
+    &__item-title {
+        font-size: 36px;
+    }
+
+    &__amount {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0 120px;
+    }
+
+    &__check {}
+    &__input {
+        width: 70px;
+        border: 1px solid $lightgreen-color;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 32px;
+    }
+    &__input::-webkit-outer-spin-button,
+    &__input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    &__price {
+        display: flex;
+        font-size: 36px;
+        gap: 0 10px;
+        width: 150px;
+    }
+
+    &__price-currency {}
+
+    &__price-price {}
+
+    &__footer {
+        padding: 20px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__continue-btn {}
+
+    &__submit {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0 60px;
+
+    }
+
+    &__sumprice {
+        display: flex;
+        font-size: 36px;
+    }
+
+    &__price-sumprice {}
+
+    &__checkout {
+    }
+
+}
+
+.basket.basket__active {
+    animation: .5s linear 0s basketActive;
+    animation-fill-mode: forwards;
+
+}
+.basket.basket__close {
+    animation: .5s linear 0s basketNoActive;
+    animation-fill-mode: forwards;
+}
+
+@keyframes basketActive {
+    from {
+        top: -800px;
+    }
+    to {
+        top: 50px;
+    }
+}
+@keyframes basketNoActive {
+    from {
+        top: 50px;
+    }
+    to {
+        top: -800px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .basket__item-info {
+        flex-direction: column;
+        gap: 30px 0;
+    }
+    .basket__amount {
+        margin: 40px 0;
+        justify-content: center;
+        gap: 0 80px;
+    }
+    .basket__check {
+        width: 300px;
+    }
+}
+@media (max-width: 480px) {
+    .basket__amount {
+        gap: 0 30px;
+    }
+    .basket__submit {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    .basket__sumprice {
+        justify-content: center;
+    }
+}
