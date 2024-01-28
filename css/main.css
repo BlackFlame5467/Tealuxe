@@ -131,6 +131,7 @@ body {
   z-index: 4;
   background: #151618;
   opacity: 0.5;
+  height: 100vh;
 }
 
 @media (max-width: 480px) {
@@ -857,7 +858,7 @@ body {
 .footer__paymants {
   display: flex;
   padding: 100px 0 0 0;
-  gap: 0 160px;
+  gap: 0 80px;
 }
 
 .nav__company {
