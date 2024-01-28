@@ -131,7 +131,7 @@ body {
   z-index: 4;
   background: #151618;
   opacity: 0.5;
-  height: 100vh;
+  height: 150vh;
 }
 
 @media (max-width: 480px) {
