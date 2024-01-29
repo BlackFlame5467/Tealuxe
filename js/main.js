@@ -95,7 +95,8 @@ function loginNoActive() {
     shadow.classList.remove('shadow');
 }
 
-function searchActive() {
+function searchActive(event) {
+    event.preventDefault();
     searchLine.classList.remove('search__no-active');
     searchLine.classList.add('search__active');
     headerNav.style.display = 'none';
@@ -111,6 +112,7 @@ function searchActive() {
 
 }
  function searchNoActive(event) {
+    event.preventDefault();
     searchLine.classList.add('search__no-active');
     searchLine.classList.remove('search__active');
     headerNav.removeAttribute('style');
