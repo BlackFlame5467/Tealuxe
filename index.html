@@ -45,7 +45,7 @@
                         <a href="#" class="basket__btn-actvie">
                             <img src="./img/header-nav/basket.svg" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#" class="login__btn-active">
                             <img src="./img/header-nav/login.svg" alt="">
                         </a>
                     </div>
@@ -274,8 +274,55 @@
                 <button class="basket__checkout basket__footer-btn btn">Checkout</button>
             </div>
         </div>
+        <div class="login">
+            <div class="login__container">
+                <div class="login__nav">
+                    <div class="login__btns">
+                        <button id="0" class="login__btn btn__active">Sign In</button>
+                        <button id="1" class="login__btn ">Sign Up</button>
+                    </div>
+                    <button class="login__close">
+                        <img src="./img/header-nav/login/close.svg" alt="">
+                    </button>
+                </div>
+                <div class="login__screens">
+                    <div id="0" class="login__screen login__screen-active">
+                        <h2 class="login__title">Username</h2>
+                        <form action="">
+                            <input type="text" class="login__input">
+                        </form>
+                        <h2 class="login__title">Password</h2>
+                        <form action="">
+                            <input type="password" class="login__input">
+                        </form>
+                        <button class="login__signin-btn">Sign In</button>
+                        <span class="login__line"></span>
+                        <a href="#" class="login__link">Forgot your password?</a>
+                    </div>
+                    <div id="1" class="login__screen">
+                        <h2 class="login__title">Full Name</h2>
+                        <form action="">
+                            <input type="text" class="login__input">
+                        </form>
+                        <h2 class="login__title">Email</h2>
+                        <form action="">
+                            <input type="email" class="login__input">
+                        </form>
+                        <h2 class="login__title">Password</h2>
+                        <form action="">
+                            <input type="password" class="login__input">
+                        </form>
+                        <h2 class="login__title">Confirm Password</h2>
+                        <form action="">
+                            <input type="password" class="login__input">
+                        </form>
+                        <button class="login__signin-btn">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section class="intro">
             <div class="container">
                 <div class="intro__inner">
@@ -528,7 +575,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <div id="shadow" class=""></div>
     <script src="./js/main.js"></script>
 </body>

@@ -11,10 +11,17 @@ const basketInput = document.querySelectorAll(".basket__input");
 const basketForm = document.querySelectorAll(".basket__check");
 const basketPrice = document.querySelectorAll(".basket__price-price");
 const basketSumPrice = document.querySelector(".basket__price-sumprice");
+const loginActive = document.querySelector(".login__btn-active");
+const login = document.querySelector(".login");
+const loginBtn = document.querySelectorAll('.login__btn');
+const loginScreen = document.querySelectorAll('.login__screen');
+const loginScreens = document.querySelector('.login__screens');
+const loginClose = document.querySelector('.login__close');
+
+
 
 
 let sum = Number(basketPrice[0].innerHTML) + Number(basketPrice[1].innerHTML) + Number(basketPrice[2].innerHTML) + Number(basketPrice[3].innerHTML) + Number(basketPrice[4].innerHTML);
-console.log(sum);
 basketSumPrice.innerHTML = `${sum}`;
 
 basketMinus.forEach(function(element) {
@@ -29,12 +36,17 @@ basketForm.forEach(function(element) {
 basketInput.forEach(function(element) {
     element.addEventListener('keypress', basketInputValue);
 });
+loginBtn.forEach(function(element) {
+    element.addEventListener('click', loginChangeScreen);
+})
 
 
 burgerBtn.addEventListener("click", burgerActive);
 burgerClose.addEventListener("click", burgerNoActive);
 basketBtn.addEventListener("click", basketActive);
 basketClose.addEventListener("click", basketNoActive);
+loginActive.addEventListener("click", loginActiveScreen);
+loginClose.addEventListener("click", loginNoActive);
 
 function burgerActive() {
     burger.classList.add('active');
@@ -60,6 +72,21 @@ function basketNoActive() {
     document.body.classList.remove('overflow');
     shadow.classList.remove('shadow');
 }
+function loginActiveScreen() {
+    login.classList.add('login__active');
+    login.classList.remove('login__close');
+    document.body.classList.add('overflow');
+    shadow.classList.add('shadow');
+}
+function loginNoActive() {
+    login.classList.remove('login__active');
+    login.classList.add('login__close');
+    document.body.classList.remove('overflow');
+    shadow.classList.remove('shadow');
+}
+
+
+
 
 function basketScoreMinus(event) {
     basketForm[event.target.parentNode.id][1].value--;
@@ -129,7 +156,22 @@ function basketCheck(event) {
         }
     }
     sum = Number(basketPrice[0].innerHTML) + Number(basketPrice[1].innerHTML) + Number(basketPrice[2].innerHTML) + Number(basketPrice[3].innerHTML) + Number(basketPrice[4].innerHTML);
-    console.log(sum);
     basketSumPrice.innerHTML = `${sum}`;
     
+}
+
+function loginChangeScreen(event) {
+    console.log(event.target.id);
+
+    loginBtn.forEach(function(element) {
+        element.classList.remove('btn__active');
+    });
+
+    event.target.classList.add("btn__active");
+
+    loginScreen.forEach(function(element) {
+        element.classList.remove("login__screen-active");
+    });
+
+    loginScreens.children[event.target.id].classList.add("login__screen-active");
 }
