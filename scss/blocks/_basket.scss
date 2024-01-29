@@ -8,7 +8,7 @@
     font-family: $second-ff;
     font-size: 24px;
     position: absolute;
-    top: -800px;
+    top: -1000px;
     left: 0;
     right: 0;
     z-index: 6;
@@ -136,7 +136,7 @@
 
 @keyframes basketActive {
     from {
-        top: -800px;
+        top: -1000px;
     }
     to {
         top: 50px;
@@ -147,7 +147,7 @@
         top: 50px;
     }
     to {
-        top: -800px;
+        top: -1000px;
     }
 }
 

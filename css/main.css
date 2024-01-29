@@ -964,7 +964,7 @@ body {
   font-family: "Cormorant", serif;
   font-size: 24px;
   position: absolute;
-  top: -800px;
+  top: -1000px;
   left: 0;
   right: 0;
   z-index: 6;
@@ -1061,7 +1061,7 @@ body {
 
 @keyframes basketActive {
   from {
-    top: -800px;
+    top: -1000px;
   }
   to {
     top: 50px;
@@ -1072,7 +1072,7 @@ body {
     top: 50px;
   }
   to {
-    top: -800px;
+    top: -1000px;
   }
 }
 @media (max-width: 768px) {
