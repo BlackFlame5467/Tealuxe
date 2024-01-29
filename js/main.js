@@ -56,7 +56,12 @@ loginActive.addEventListener("click", loginActiveScreen);
 loginClose.addEventListener("click", loginNoActive);
 searchBtn.addEventListener("click", searchActive);
 searchClose.addEventListener("click", searchNoActive);
+document.body.addEventListener("click", bodyPrevent);
 
+
+function bodyPrevent(event) {
+    event.preventDefault();
+}
 
 function burgerActive() {
     burger.classList.add('active');
