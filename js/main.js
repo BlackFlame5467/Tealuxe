@@ -17,6 +17,14 @@ const loginBtn = document.querySelectorAll('.login__btn');
 const loginScreen = document.querySelectorAll('.login__screen');
 const loginScreens = document.querySelector('.login__screens');
 const loginClose = document.querySelector('.login__close');
+const searchLine = document.querySelector('.header__search');
+const searchBtn = document.querySelector('.search__btn');
+const searchInput = document.querySelector('.search__input');
+const searchClose = document.querySelector('.search__close');
+const headerNav = document.querySelector('.header__nav');
+const headerInner = document.querySelector('.header__inner');
+const headerLogin = document.querySelector('.header__login');
+
 
 
 
@@ -38,8 +46,7 @@ basketInput.forEach(function(element) {
 });
 loginBtn.forEach(function(element) {
     element.addEventListener('click', loginChangeScreen);
-})
-
+});
 
 burgerBtn.addEventListener("click", burgerActive);
 burgerClose.addEventListener("click", burgerNoActive);
@@ -47,6 +54,9 @@ basketBtn.addEventListener("click", basketActive);
 basketClose.addEventListener("click", basketNoActive);
 loginActive.addEventListener("click", loginActiveScreen);
 loginClose.addEventListener("click", loginNoActive);
+searchBtn.addEventListener("click", searchActive);
+searchClose.addEventListener("click", searchNoActive);
+
 
 function burgerActive() {
     burger.classList.add('active');
@@ -85,6 +95,32 @@ function loginNoActive() {
     shadow.classList.remove('shadow');
 }
 
+function searchActive() {
+    searchLine.classList.remove('search__no-active');
+    searchLine.classList.add('search__active');
+    headerNav.style.display = 'none';
+    loginActive.style.display = "none";
+    basketBtn.style.display = 'none';
+    headerInner.style.justifyContent = "normal";
+    headerInner.style.width = '100%';
+    headerInner.style.width = '100%';
+    searchLine.style.display = 'flex';
+    searchLine.style.gap = '0 10px';
+    searchLine.style.width = '100%';
+    headerLogin.style.width = '80%';
+
+}
+ function searchNoActive(event) {
+    searchLine.classList.add('search__no-active');
+    searchLine.classList.remove('search__active');
+    headerNav.removeAttribute('style');
+    loginActive.removeAttribute('style');
+    basketBtn.removeAttribute('style');
+    headerInner.removeAttribute('style');
+    searchLine.removeAttribute('style');
+    headerLogin.removeAttribute('style');
+    searchInput.value = "";
+ }
 
 
 

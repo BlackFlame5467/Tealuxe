@@ -41,6 +41,9 @@ body {
     opacity: .5;
     height: 150vh;
 }
+.close {
+    display: none;
+}
 
 @media (max-width: 480px) {
     .title {

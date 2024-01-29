@@ -87,6 +87,19 @@
     }
 }
 
+.header__search.search__active {
+    border: 1px solid $main-color;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.header__search.search__no-active .search__input, .header__search.search__no-active .search__close {
+    display: none;
+}
+
+.search__input {
+    width: 100%;
+}
 
 
 .burger {

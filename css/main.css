@@ -135,6 +135,10 @@ body {
   height: 150vh;
 }
 
+.close {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .title {
     font-size: 24px;
@@ -217,6 +221,20 @@ body {
     display: none;
   }
 }
+.header__search.search__active {
+  border: 1px solid #151618;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.header__search.search__no-active .search__input, .header__search.search__no-active .search__close {
+  display: none;
+}
+
+.search__input {
+  width: 100%;
+}
+
 .burger {
   width: 360px;
   margin: 0 auto;
